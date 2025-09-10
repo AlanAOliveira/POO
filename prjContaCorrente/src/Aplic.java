@@ -11,7 +11,6 @@ public class Aplic {
 
         int numConta, opcao;
         double saldoInicial;
-        
 
         Scanner entrada = new Scanner(System.in);
         System.out.print("Digite o numero da conta");
@@ -31,11 +30,16 @@ public class Aplic {
             System.out.println("\nNumero da conta" + objConta.getNumero());
             switch (opcao) {
                 case 1:
-                    System.out.println("Digite o Valor para saque: ");
-                    if()
+
                     break;
                 case 2:
-                    System.out.println("Medida do perímetro: " + objRet.calcPerimetro() + objRet.getUnidadeMedida());
+                    System.out.println("Digite o Valor para saque: ");
+                    saldoInicial = entrada.nextDouble();
+                    if (saldoInicial <= objConta.getSaldo()) {
+                        objConta.sacar(saldoInicial);
+                    } else {
+                        System.out.println("Saldo insuficiente");
+                    }
                     break;
                 case 3:
                     System.out.println("Medida da diagonal: " + objRet.calcDiagonal() + objRet.getUnidadeMedida());
