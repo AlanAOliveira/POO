@@ -14,7 +14,7 @@ public class Aplic {
 
        Cliente objCliente = new Cliente("123.456.789-10", "maria", "10101010");
        objCliente.setPeso(60);
-       objCliente.setAltura(160);
+       objCliente.setAltura(1.60);
 
 
        
@@ -29,6 +29,7 @@ public class Aplic {
         System.out.println("telefone:"+objCliente.getTelefone());
         System.out.println("peso:"+objCliente.getPeso()+"Kg");
         System.out.println("Altura:"+objCliente.getAltura()+"cm");
+        System.out.println("IMC:"+objCliente.calcImc());
     }
     
 }

@@ -34,5 +34,9 @@ public class Cliente extends Pessoa {
     public double getAltura(){
         return(altura);
     }
+    
+    public double calcImc(){
+        return(peso/altura*altura);
+    }
 }
 
