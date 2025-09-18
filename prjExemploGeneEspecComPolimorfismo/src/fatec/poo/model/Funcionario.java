@@ -9,6 +9,7 @@ public abstract class Funcionario {
     private int registro;
     private String nome;
     private String dtAdmissao;
+    private String cargo;//nos requisitos não tem metodo que atribua valor?
 
     public Funcionario(int r, String n, String dtAdm) {
         registro = r;
@@ -26,4 +27,19 @@ public abstract class Funcionario {
         return(calcSalBruto() - calcDesconto());
     }
 
+    public int getRegistro(){
+        return(registro);
+    }
+
+    public String getNome(){
+        return(nome);
+    }
+
+    public String getDtAdmissao(){
+        return(dtAdmissao);
+    }
+
+    public String getCargo(){
+        return(cargo);
+    }
 }

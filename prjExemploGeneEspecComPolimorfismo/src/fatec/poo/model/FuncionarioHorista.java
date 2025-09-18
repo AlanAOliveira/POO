@@ -21,5 +21,13 @@ public class FuncionarioHorista extends Funcionario{
     public double calcSalBruto(){
         return(valHorTrab * qtdHorTrab);
     }
+
+    public double calcGratificacao(){
+        return(calcSalBruto()*0.075);
+    }
+
+    public double calcSalLiquido(){
+        return(super.calcSalLiquido() + calcGratificacao());
+    }
     
 }
