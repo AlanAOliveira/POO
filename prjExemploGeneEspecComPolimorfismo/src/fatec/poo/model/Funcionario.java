@@ -17,29 +17,33 @@ public abstract class Funcionario {
         dtAdmissao = dtAdm;
     }
 
+    public void setCargo(String c) {
+        cargo = c;
+    }
+
     abstract public double calcSalBruto();
-    
-    public double calcDesconto(){
+
+    public double calcDesconto() {
         return (0.1 * calcSalBruto());
     }
-    
-    public double calcSalLiquido(){
-        return(calcSalBruto() - calcDesconto());
+
+    public double calcSalLiquido() {
+        return (calcSalBruto() - calcDesconto());
     }
 
-    public int getRegistro(){
-        return(registro);
+    public int getRegistro() {
+        return (registro);
     }
 
-    public String getNome(){
-        return(nome);
+    public String getNome() {
+        return (nome);
     }
 
-    public String getDtAdmissao(){
-        return(dtAdmissao);
+    public String getDtAdmissao() {
+        return (dtAdmissao);
     }
 
-    public String getCargo(){
-        return(cargo);
+    public String getCargo() {
+        return (cargo);
     }
 }
